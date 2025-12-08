@@ -1,4 +1,4 @@
-import { $, component$, QRL, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, QRL, useOnDocument, useSignal } from "@builder.io/qwik";
 import { Build } from "~/data/builds";
 import TypeIcon from "~/components/router-head/type-icon";
 
@@ -19,23 +19,15 @@ export default component$((props: Props)=> {
       }
   })
 
-  useVisibleTask$(({ cleanup }) => {
-
-    const clickOutsideHandler = (event: MouseEvent) => {
+  useOnDocument(
+    'click',
+    $((event: MouseEvent) => {
       const target = event.target as HTMLElement;
-
       if (dropdownRef.value && !dropdownRef.value.contains(target)) {
-
         dropdownRef.value.open = false;
       }
-    };
-
-    document.addEventListener('click', clickOutsideHandler);
-
-    cleanup(() => {
-      document.removeEventListener('click', clickOutsideHandler);
-    });
-  });
+    })
+  );
 
   return <>
     <details ref={dropdownRef} class={"relative"}>
