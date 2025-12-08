@@ -11,7 +11,7 @@ export default component$((props: Props) => {
     <>
       <div class={"card bg-base-100 p-6 shadow-xl border border-base-200"}>
         <div class={"grid grid-cols-1 md:grid-cols-4 gap-2"}>
-          <div class={"flex items-center gap-2 mb-4 border-b pb-4 border-base-300"}>
+          <div class={"flex items-center gap-2 mb-4 pb-4"}>
             <TypeIcon type={props.value.type}></TypeIcon>
 
             <div class={"flex flex-col"}>
