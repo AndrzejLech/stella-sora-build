@@ -24,7 +24,7 @@ export default component$(() => {
         )}
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang="en" class={"h-full w-full p-0 m-0 bg-base-200"}>
         <RouterOutlet />
       </body>
     </QwikCityProvider>
