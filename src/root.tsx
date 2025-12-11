@@ -15,6 +15,7 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <head>
+        <title>Stella Sora Builds</title>
         <meta charset="utf-8" />
         {!isDev && (
           <link
@@ -24,7 +25,8 @@ export default component$(() => {
         )}
         <RouterHead />
       </head>
-      <body lang="en" class={"h-full w-full p-0 m-0 bg-base-200"}>
+
+      <body lang="en" class={"min-h-screen bg-base-200"}>
         <RouterOutlet />
       </body>
     </QwikCityProvider>

@@ -1,6 +1,6 @@
 import { $, component$, QRL, useOnDocument, useSignal } from "@builder.io/qwik";
 import { Build } from "~/data/builds";
-import TypeIcon from "~/components/router-head/type-icon";
+import TypeIcon from "~/components/builds/type-icon";
 
 interface Props {
   list: Build[],
