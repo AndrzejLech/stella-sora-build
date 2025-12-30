@@ -547,14 +547,120 @@ export const builds : Build[] = [
       "Multi-Shot"
     ],
     chromatic: [
-      "Blast Pursuit",
       "Finishing Blow",
     ],
     orange: [
       "Combo Punch",
       "Bold Challenge",
       "Swirling Counterattack",
-      "Inertial Punch",
+      "Peak Performance",
+      "Ironfist Blow",
+    ]
+  },
+  {
+    name: "Snowish Laru (Fuyuka)",
+    type: Type.IGNIS,
+    role: Role.SUPPORT,
+    pink: [
+      "Fire Downpour",
+      "Special Ammo"
+    ],
+    chromatic: [
+      "Fire Tale Rule",
+      "Two-Gun Salute",
+    ],
+    orange: [
+      "Celebration Resumed",
+      "Toy Army",
+      "Uplifting Shot",
+    ]
+  },
+  {
+    name: "Flora (Fuyuka)",
+    type: Type.IGNIS,
+    role: Role.SUPPORT,
+    pink: [
+      "Ember of Tomorrow",
+      "Ember Rekindled"
+    ],
+    chromatic: [
+      "Reinforced Impression",
+      "Perfect Acting",
+    ],
+    orange: [
+      "Lethal Inferno",
+      "Guest Performer",
+      "Foreshadowing Verification",
+    ]
+  },
+  {
+    name: "Flora (S. Laru)",
+    type: Type.IGNIS,
+    role: Role.MAIN,
+    pink: [
+      "Spiral Dance",
+      "Ending Song"
+    ],
+    chromatic: [
+      "Perception fo Psyche",
+    ],
+    orange: [
+      "Lethal Inferno",
+      "Emotional Catharsis",
+      "Home Court Dominance",
+      "Hero's Halo",
+    ]
+  },
+  {
+    name: "Snowish Laru (Flora)",
+    type: Type.IGNIS,
+    role: Role.SUPPORT,
+    pink: [
+      "Fire Downpour",
+      "Special Ammo"
+    ],
+    chromatic: [
+      "Two-Gun Salute",
+      "Fire Tale Rule",
+    ],
+    orange: [
+      "Uplifting Shot",
+      "Ammo Rain",
+      "Toy Army",
+    ]
+  },
+  {
+    name: "Chixia (Flora)",
+    type: Type.IGNIS,
+    role: Role.SUPPORT,
+    pink: [
+      "Crimson Dragon: Convergence",
+      "Crimson Dragon: Chant",
+    ],
+    chromatic: [
+      "Sigil Unleashed: Flame Glow",
+      "Ink Sigil: Ambush",
+    ],
+    orange: [
+      "Ink Sigil: Horn Call",
+      "Ink Sigil: Barrier Construct",
+    ]
+  },
+  {
+    name: "Kasimira (Flora)",
+    type: Type.IGNIS,
+    role: Role.SUPPORT,
+    pink: [
+      "Heated Battle",
+      "Area Bombardment"
+    ],
+    chromatic: [
+      "Meltdown Threshold",
+    ],
+    orange: [
+      "Shocking Bombardment",
+      "Surprise Gift",
+      "Army Breaker",
     ]
   },
 ] as const

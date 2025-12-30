@@ -1,30 +1,30 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useComputed$ } from "@builder.io/qwik";
 import { Type } from "~/data/builds";
 
 interface Props {
   type: Type
 }
 
+const ICON_MAP: Record<Type, string> = {
+  [Type.AQUA]: "/icons/aqua.png",
+  [Type.IGNIS]: "/icons/ignis.png",
+  [Type.VENTUS]: "/icons/ventus.png",
+  [Type.TERRA]: "/icons/terra.png",
+  [Type.LUX]: "/icons/lux.png",
+  [Type.UMBRA]: "/icons/umbra.png",
+};
+
 export default component$((props: Props)=> {
 
-  const returnIcon = ((type: Type): string => {
-    switch (type) {
-      case Type.AQUA:
-        return "/icons/aqua.png";
-      case Type.IGNIS:
-        return "/icons/ignis.png";
-      case Type.VENTUS:
-        return "/icons/ventus.png";
-      case Type.TERRA:
-        return "/icons/terra.png";
-      case Type.LUX:
-        return "/icons/lux.png";
-      case Type.UMBRA:
-        return "/icons/umbra.png";
-    }
-  })
+  const iconsSrc = useComputed$(() => ICON_MAP[props.type]);
 
   return <>
-    <img src={returnIcon(props.type)} width={"24"} height={"24"} alt={""}/>
+    <img
+      key={iconsSrc.value}
+      src={iconsSrc.value}
+      width={"24"}
+      height={"24"}
+      alt={""}
+    />
   </>
 })

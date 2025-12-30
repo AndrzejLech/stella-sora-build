@@ -1,7 +1,7 @@
 import { $, component$, Signal, useSignal } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { Build, builds, Role, Type } from "~/data/builds";
-import TrekkerDropdown from "~/components/builds/trekker-dropdown";
+import TrekkerSearch from "~/components/builds/trekker-search";
 import BuildElement from "~/components/builds/build-element";
 import Navbar from "~/components/navbar";
 
@@ -56,21 +56,21 @@ export default component$(() => {
         <Navbar></Navbar>
         <div class={"container p-8"}>
           <div class={"card bg-base-100 m-2 flex flex-row p-4"}>
-            <TrekkerDropdown
+            <TrekkerSearch
               list={mainTrekkers.value}
               value={mainTrekker.value as Build}
               onItemSelect$={handleMainTrekkerDropDown}
-            ></TrekkerDropdown>
-            <TrekkerDropdown
+            ></TrekkerSearch>
+            <TrekkerSearch
               list={supportTrekkers.value}
               value={firstSupportTrekker.value as Build}
               onItemSelect$={handleFirstSupportTrekkerDropDown}
-            ></TrekkerDropdown>
-            <TrekkerDropdown
+            ></TrekkerSearch>
+            <TrekkerSearch
               list={supportTrekkers.value}
               value={secondSupportTrekker.value as Build}
               onItemSelect$={handleSecondSupportTrekkerDropDown}
-            ></TrekkerDropdown>
+            ></TrekkerSearch>
           </div>
           <div class={"m-2"}>
             <BuildElement value={mainTrekker.value as Build}></BuildElement>
