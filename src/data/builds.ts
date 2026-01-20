@@ -720,4 +720,76 @@ export const builds : Build[] = [
       "Twin Born (C)",
     ]
   },
+  {
+    name: "Nazuka (Full DPS)",
+    type: Type.VENTUS,
+    role: Role.SUPPORT,
+    pink: [
+      "Flower Formation: Waves",
+      "Flower Formation: Turbulent"
+    ],
+    chromatic: [
+      "Flower Formation: Blast",
+      "Almighty Leader",
+    ],
+    orange: [
+      "Self-Improvement",
+      "Wind Demon Seed",
+      "Almighty Leader",
+    ]
+  },
+  {
+    name: "Nazuka (Nanoha)",
+    type: Type.VENTUS,
+    role: Role.SUPPORT,
+    pink: [
+      "Flower Formation: Waves",
+      "Flower Formation: Turbulent"
+    ],
+    chromatic: [
+      "Almighty Leader",
+      "Flower Formation: Blast",
+    ],
+    orange: [
+      "Self-Improvement",
+      "Wind Demon Seed",
+      "Flower Formation: Erosion",
+    ]
+  },
+  {
+    name: "Nanoha (Nazuka)",
+    type: Type.VENTUS,
+    role: Role.MAIN,
+    pink: [
+      "Whirling Blade",
+      "Bloom Dance"
+    ],
+    chromatic: [
+      "Blossom Shower",
+      "Sky Piercer",
+    ],
+    orange: [
+      "Splendid Vortex",
+      "Infinite Shade",
+      "Wind Whispers",
+      "Distant Prayer (situational)"
+    ]
+  },
+  {
+    name: "Ann (Nazuka)",
+    type: Type.VENTUS,
+    role: Role.SUPPORT,
+    pink: [
+      "Wind Banish",
+      "Downwind Journey (w/ Nanoha)",
+      "Gale Bastion (General purpose)",
+    ],
+    chromatic: [
+      "Wind Erosion Havoc",
+      "Forest Princess' Blessing",
+    ],
+    orange: [
+      "Turbulent Flow",
+    ]
+  },
 ] as const
