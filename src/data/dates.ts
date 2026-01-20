@@ -198,4 +198,18 @@ export const dates: CharacterCard[] = [
       { location: 'Market', description: "What's that? Looks suspicious." },
     ],
   },
+  {
+    name: 'Snowish Laru',
+    activities: [
+      { location: 'Market', description: 'Haven\'t been to that area yet.' },
+      { location: 'Port', description: "How about doing some night fishing?" },
+    ],
+  },
+  {
+    name: 'Firenze',
+    activities: [
+      { location: 'Acadeny', description: 'Getting hungry. Gonna go to the cafeteria.' },
+      { location: 'Port', description: "How about doing some night fishing?" },
+    ],
+  },
 ];

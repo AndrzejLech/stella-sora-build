@@ -663,4 +663,61 @@ export const builds : Build[] = [
       "Army Breaker",
     ]
   },
+  {
+    name: "Firenze (Skill)",
+    type: Type.UMBRA,
+    role: Role.MAIN,
+    pink: [
+      "Step Kicking",
+      "Nimble Step"
+    ],
+    chromatic: [
+      "Hunting Command (S)",
+      "High Risk (A)",
+    ],
+    orange: [
+      "Place Your Bets (A)",
+      "Dark Pirouette (B)",
+      "Flash Break (B)",
+      "Instant Liquidation (B)(linked)",
+      "Gloomy Veil (B)(linked)",
+    ]
+  },
+  {
+    name: "Cosette (Firenze)",
+    type: Type.UMBRA,
+    role: Role.SUPPORT,
+    pink: [
+      "Eclipse Imprint",
+      "Phantom Mark"
+    ],
+    chromatic: [
+      "Dark: Mirage (A)",
+      "Gift of Darkness (B+)",
+    ],
+    orange: [
+      "Dark: Demon Mark (B+)",
+      "Dark: Afterglow (B+)",
+      "Void Blessing (B)",
+      "Nether Blaze (varies)",
+    ]
+  },
+  {
+    name: "Mistique (Firenze)",
+    type: Type.UMBRA,
+    role: Role.SUPPORT,
+    pink: [
+      "Happy Face",
+      "Reality Erosion"
+    ],
+    chromatic: [
+      "The Conjuring (C)",
+    ],
+    orange: [
+      "Solar Absorption (B+)",
+      "Shadow Shackle (C)",
+      "Wraith Haunting (C)",
+      "Twin Born (C)",
+    ]
+  },
 ] as const
