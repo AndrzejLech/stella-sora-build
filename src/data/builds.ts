@@ -792,4 +792,133 @@ export const builds : Build[] = [
       "Turbulent Flow",
     ]
   },
+    {
+      "name": "Teresa (Donna)",
+      "type": Type.AQUA,
+      "role": Role.MAIN,
+      "pink": [
+        "Stream: True Charged Strike",
+        "Stream: Drip's Overturn"
+      ],
+      "chromatic": [
+        "Cordiality (A)",
+        "Unbreakable Bond (B+)",
+        "Restarting (linked)"
+      ],
+      "orange": [
+        "Muddy Engulf (A)",
+        "Magic Sword Siphoning (Thumb up)",
+        "Magic Sword Smack (Varies)",
+        "Guardsman Blessing (B+) (linked)"
+      ]
+    },
+    {
+      "name": "Donna (Teresa)",
+      "type": Type.AQUA,
+      "role": Role.SUPPORT,
+      "pink": [
+        "Unleashed Arrow",
+        "Arrowfall Reckoning"
+      ],
+      "chromatic": [
+        "Arrow Pursuit (S)",
+        "Chilling Onslaught (linked)",
+        "Water Ripple (A)"
+      ],
+      "orange": [
+        "Frostbitten Arrow (S)",
+        "Aquatic Assault (S) (linked)"
+      ]
+    },
+    {
+      "name": "Freesia (Teresa)",
+      "type": Type.AQUA,
+      "role": Role.SUPPORT,
+      "pink": [
+        "Realm of Frost",
+        "Localized Snowfall"
+      ],
+      "chromatic": [
+        "Penetrating Chill (B)"
+      ],
+      "orange": [
+        "Winter's Grip (A)",
+        "Guardian's Heart (C)",
+        "Ice Vortex (Varies)",
+        "Blessing of Faith (Varies)",
+        "Power of Redemption (Varies)"
+      ]
+    },
+    {
+      "name": "Iris (Teresa)",
+      "type": Type.AQUA,
+      "role": Role.SUPPORT,
+      "pink": [
+        "Blizzard: Spread",
+        "Blizzard: Vortex"
+      ],
+      "chromatic": [
+      ],
+      "orange": [
+        "Bundle Sale (B+)",
+        "Frozen Shield (C)",
+        "Sneaky Fisher (B) (linked)",
+        "Prolonged Winter (linked)"
+      ]
+    },
+    {
+      "name": "Chitose (Donna)",
+      "type": Type.AQUA,
+      "role": Role.MAIN,
+      "pink": [
+        "Serpent's Glide",
+        "Mirror Blade"
+      ],
+      "chromatic": [
+        "Aqueous Phantasm (A)",
+        "Azure Embrace (B)"
+      ],
+      "orange": [
+        "Tremble and Fall (A)",
+        "Dance of Elegance (C)",
+        "Waltz of Ripples (C)"
+      ]
+    },
+    {
+      "name": "Donna (Chitose)",
+      "type": Type.AQUA,
+      "role": Role.SUPPORT,
+      "pink": [
+        "Unleashed Arrow",
+        "Arrowfall Reckoning"
+      ],
+      "chromatic": [
+        "Arrow Pursuit (S)",
+        "Water Ripple (A)",
+        "Chilling Onslaught (linked)"
+      ],
+      "orange": [
+        "Frostbitten Arrow (S)",
+        "Aquatic Assault (A) (linked)",
+        "Messenger Arrow (B)"
+      ]
+    },
+    {
+      "name": "Teresa (Chitose)",
+      "type": Type.AQUA,
+      "role": Role.SUPPORT,
+      "pink": [
+        "Surge: Immortality",
+        "Surge: Infinite"
+      ],
+      "chromatic": [
+        "Let Me Help! (A)",
+        "Shortcut Seeker (A)",
+        "Isn't It Awesome! (A)",
+      ],
+      "orange": [
+        "Band-aid Collector (B)",
+        "Wave Breaker (B)"
+      ]
+    }
 ] as const
